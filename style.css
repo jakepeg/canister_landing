@@ -1,0 +1,94 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: 'Inter', 'Roboto', sans-serif;
+  background-color: #1F1F1F;
+  color: white;
+  text-align: center;
+}
+
+header .logo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 146px;
+  height: 41px;
+}
+
+/* Headline Styles */
+.headline {
+  margin-top: 150px;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+/* Animated SVG Styles */
+.svg-container {
+  position: relative;
+  margin: 40px auto;
+  width: 200px;
+  height: 200px;
+}
+
+.animated-svg {
+  width: 100%;
+  height: 100%;
+  animation: pulse 3s infinite ease-in-out;
+}
+
+.svg-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 32px;
+  font-weight: 700;
+  color: white;
+  pointer-events: none;
+}
+
+@keyframes pulse {
+  0%, 100% {
+      transform: scale(1);
+  }
+  50% {
+      transform: scale(1.05);
+  }
+}
+
+/* Drop Text Styles */
+.drop-text {
+  font-size: 14px;
+  color: grey;
+  margin: 20px 0;
+}
+
+/* Subheadline Styles */
+.subheadline {
+  /* font-size: 24px;
+  font-weight: 500; */
+  font-size: 48px;
+  font-weight: 700;
+  margin-top: 20px;
+}
+
+/* Twitter Icon Styles */
+.twitter-icon {
+  margin-top: 30px;
+  width: 32px;
+  height: 32px;
+  transition: transform 0.3s;
+}
+
+.twitter-icon:hover {
+  transform: scale(1.2);
+}
+
+@media (max-width: 600px) {
+  .headline {
+      font-size: 30px;
+  }
+  .subheadline {
+    font-size: 30px;
+}
+}
